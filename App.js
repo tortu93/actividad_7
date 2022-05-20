@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import CatComponent from "./scr/components/CatComponent";
+import CatState from "./scr/components/CatState"
+import CatProps from "./scr/components/CatProps"
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <CatProps></CatProps>
+      <CatState></CatState>
       <StatusBar style="auto" />
     </View>
   );
